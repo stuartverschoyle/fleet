@@ -12,6 +12,7 @@ export default defineConfig({
   projectId: import.meta.env.SANITY_STUDIO_PROJECT_ID,
   dataset: import.meta.env.SANITY_STUDIO_DATASET,
 
+
   plugins: [deskTool(), visionTool(), media()],
 
   schema: {
