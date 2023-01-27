@@ -9,8 +9,8 @@ export default defineConfig({
   name: 'default',
   title: 'Sanity Project',
 
-  projectId: 'mm5dckhx',
-  dataset: 'production',
+  projectId: import.meta.env.SANITY_STUDIO_PROJECT_ID,
+  dataset: import.meta.env.SANITY_STUDIO_DATASET,
 
   plugins: [deskTool(), visionTool(), media()],
 
