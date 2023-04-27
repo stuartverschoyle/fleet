@@ -1,0 +1,335 @@
+a {
+  text-decoration: none;
+}
+
+.filter-nav {
+  z-index:1;
+  width: 70%;
+  position: absolute;
+}
+
+.filter-nav ul {
+  list-style:none;
+  display:flex;
+}
+
+.fleet-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container{
+  background: rgb(159, 203, 232);
+  height:100vh;
+  width:100vw;
+  position:absolute;
+  left:0%;
+  top:0%;
+}
+@keyframes clouds-loop-1 {
+    to {
+      background-position: -1579px 0;
+    }
+  }
+  .clouds-1 {
+    background-image: url("https://cdn.discordapp.com/attachments/990641651175264306/1026619079949291570/clouds_233.png");
+    animation: clouds-loop-1 20s infinite linear;
+    background-size:cover;
+  }
+  
+  @keyframes clouds-loop-2 {
+    to {
+      background-position: -1579px 0;
+    }
+  }
+  .clouds-2 {
+    background-image: url("https://cdn.discordapp.com/attachments/990641651175264306/1026617444720201728/clouds_991.png");
+    animation: clouds-loop-2 15s infinite linear;
+    background-size:cover;
+  }
+  
+  @keyframes clouds-loop-3 {
+    to {
+      background-position: -1579px 0;
+    }
+  }
+  .clouds-3 {
+    background-image: url("https://cdn.discordapp.com/attachments/990641651175264306/1026615143339147374/clouds_55553.png");
+    animation: clouds-loop-3 17s infinite linear;
+    background-size:cover;
+  }
+  .clouds {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.8;
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+  
+  .clouds-1,
+  .clouds-2,
+  .clouds-3 {
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 900px;
+  }
+
+:root {
+      --dark-green: #9cc675;
+      --dark-yellow: #e89a3d;
+      --extra-light-brown:#fdf0d7;
+      --light-brown: #ecd5ab;
+      --dark-brown:#915b40;
+      --light-yellow:#f8e3a8;
+      --light-red:#f3ac99;
+      --light-teal:#a6c8cc;
+      --light-gray:#ddd5d6;
+    }
+
+    .single-view-content {
+      background: rgba(255,255,255,0.8);
+      width: 30%;
+      overflow-y: auto;
+      position: absolute;
+      z-index: 1;
+      height: 100vh;
+      right: 0;
+    }
+
+    html, body {
+      position: relative;
+      height: 100%;
+      font-family: sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      /* background-image: url('https://www.vistajet.com/globalassets/images/backgrounds/clouds-bg.jpg?width=1600&upscale=false'); */
+    min-height: 42.55vw;
+    }
+ 
+.btn.btn-main {
+  background: var(--dark-green);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  border:none;
+  position: relative;
+  padding: 15px 40px;
+
+}
+.btn.btn-main:before {
+  content: '';
+  width: 5px;
+  background: var(--dark-brown);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex-box-wrap {
+ display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+.main-single-view {
+  flex-basis: 500px;
+  width: 120vw;
+  padding-right:20%;
+}
+
+.swiper-slide {
+  width: 400px;
+  display: flex;
+  justify-content: left;
+  align-items: center;  
+}
+
+.swiper-container-coverflow .swiper-wrapper {
+  padding-right: 130px;
+}
+
+.team-info {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.team-info .team-info-item {
+    font-size: 22px;
+    padding: 15px 30px;
+    display: none;
+    position: absolute;
+
+}
+
+.team-info .team-info-item.active {
+  display: block;
+}
+
+
+@-webkit-keyframes team-info-item {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.team-info-item.active .heading, .team-info-item.active .content{
+  -webkit-animation-name: team-info-item;
+  animation-name: team-info-item;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+}
+.team-info-item.active .content {
+  -webkit-animation-delay: .2s;
+}
+.heading {
+  margin: 0;
+}
+.content {
+      font-size: 19px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #000;
+    margin-top: 15px;
+}
+
+.fsocial {
+  list-style: none;
+  padding: 0;
+  display: flex;
+
+}
+
+.fsocial li {
+  margin: 5px 15px;
+  margin-bottom: 50px;
+  
+}
+.fsocial li:first-child {
+  margin-left: 0;
+}
+
+.fsocial li img{
+  width: 30px;
+  filter: invert(1);
+}
+
+.exp-time {
+    list-style: none;
+    border-left: 2px solid #000;
+    padding-left: 20px;
+    margin-left: 0px;
+}
+.exp-time li {
+    position: relative;
+    margin-bottom: 50px;
+}
+.exp-time li:before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: #000;
+    display: block;
+    position: absolute;
+    left: -26px;
+}
+.fw300 {
+  font-weight: 300;
+
+}
+
+.exp-time h4,.exp-time h2,.exp-time p {
+  margin: 0;
+
+}
+
+.swiper-slide:hover {
+  cursor:ew-resize;
+}
+.arrow-box {
+  position: fixed;
+  width: 30%;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 50px;
+  border-top: 1px solid #000;
+}
+.arrow-box .slideNext,.arrow-box .slidePrev {
+  transition: all .3s;
+  cursor: pointer;
+
+} 
+
+
+
+.arrow-box .slidePrev:hover {
+  transform: translateX(-10px);
+}
+.arrow-box .slideNext:hover {
+  transform: translateX(10px);
+}
+.arrow-box svg {
+  width: 30px;
+}
+
+#digma-left {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+#digma-left iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%!important;
+  height: 100%!important;
+}

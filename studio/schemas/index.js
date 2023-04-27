@@ -1,4 +1,3 @@
-import animal from './animal'
 import fleet from './fleet'
 
-export const schemaTypes = [animal, fleet]
+export const schemaTypes = [fleet]
