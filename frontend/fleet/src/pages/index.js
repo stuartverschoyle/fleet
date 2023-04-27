@@ -2,15 +2,24 @@ import * as React from "react"
 import { graphql } from "gatsby"
 
 const IndexPage = ({data}) => {
-  const animals = data.allSanityAnimal.edges.map(animals => (
+  const range = data.allSanityFleet.edges.map(fleet => (
     <div style={{backgroundColor: '#ddd', padding: '20px', margin: '20px 0'}}>
-      <h2>{animals.node.name}</h2>
+      <h2>{fleet.node.range}</h2>
     </div>
   ))
+
+  const fleet = data.allSanityFleet.edges.map(fleet => (
+    <div style={{backgroundColor: '#ddd', padding: '20px', margin: '20px 0'}}>
+      <p>{fleet.node.aircraft}</p>
+    </div>
+  ))
+
+
   return (
     <main>
       <h1>Fleet</h1> 
-      {animals}
+      {range}
+      {fleet}
      </main>
   )
 }
@@ -18,15 +27,16 @@ const IndexPage = ({data}) => {
 export default IndexPage
 
 export const query = graphql`
-  query {
-    allSanityAnimal {
-      edges {
-        node {
-          name
+    query {
+      allSanityFleet {
+        edges {
+          node {
+            aircraft
+            range
+          }
         }
       }
     }
-  }
 `
 
 export const Head = () => <title>Home Page</title>

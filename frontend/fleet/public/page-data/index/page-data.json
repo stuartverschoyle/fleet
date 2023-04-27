@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-index-js","path":"/","result":{"data":{"allSanityAnimal":{"edges":[{"node":{"name":"dog"}},{"node":{"name":"Fish"}},{"node":{"name":"cat"}},{"node":{"name":"frog"}}]}},"pageContext":{}},"staticQueryHashes":[],"slicesMap":{}}
+{"componentChunkName":"component---src-pages-index-js","path":"/","result":{"data":{"allSanityFleet":{"edges":[{"node":{"aircraft":["Global 7500"],"range":"Global Range"}},{"node":{"aircraft":[],"range":"Continental"}}]}},"pageContext":{}},"staticQueryHashes":[],"slicesMap":{}}
